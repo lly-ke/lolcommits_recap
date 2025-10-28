@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lolcommits_recap"
+version = "1.0.0"
+description = "将Lolcommits提交照片转换成精彩的视频回顾"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "llyke", email = "2720851545@qq.com"}
+]
+maintainers = [
+    {name = "llyke", email = "2720851545@qq.com"}
+]
+keywords = ["lolcommits", "video", "git", "commit", "photos", "recap"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Software Development :: Version Control",
+]
+requires-python = ">=3.6"
+dependencies = [
+    "opencv-python>=4.8.1.78",
+    "Pillow>=10.0.0",
+    "numpy>=1.24.3",
+    "tqdm>=4.66.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/lly-ke/lolcommits_recap"
+Repository = "https://github.com/lly-ke/lolcommits_recap"
+Issues = "https://github.com/lly-ke/lolcommits_recap/issues"
+
+[project.scripts]
+lolcommits_recap = "lolcommits_recap.cli:main"
+
+[tool.setuptools]
+packages = ["lolcommits_recap"]
+
+[tool.setuptools.package-data]
+lolcommits_recap = ["*.md", "*.txt"]
+

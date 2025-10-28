@@ -1,0 +1,8 @@
+include README.md
+include README_EN.md
+include LICENSE
+include requirements.txt
+include pyproject.toml
+recursive-include lolcommits_recap *.py
+recursive-include lolcommits_recap *.md
+recursive-include lolcommits_recap *.txt
